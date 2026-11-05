@@ -1,0 +1,21 @@
+{
+  "name": "patch-review-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "init": "node scripts/init.js",
+    "dev": "node server.js",
+    "test": "node --test tests/desk.test.js",
+    "check": "node scripts/check.js",
+    "build": "node scripts/build.js",
+    "agent": "node scripts/agent.js"
+  },
+  "dependencies": {
+    "@agent-native/core": "0.223.0",
+    "diff": "9.0.0",
+    "zod": "4.4.3"
+  }
+}

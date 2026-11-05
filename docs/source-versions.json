@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-11-05",
+  "sources": [
+    {
+      "package": "@agent-native/core",
+      "version": "0.223.0",
+      "license": "MIT",
+      "gitHead": null,
+      "tarball": "https://registry.npmjs.org/@agent-native/core/-/core-0.223.0.tgz",
+      "integrity": "sha512-VYT6TPRU/Nr6SQyNcE960erAioGEsRyyVeKWDA2SH/MvkGGiXJg2tIhf9sZLfCvpL7nb8SIf30FTpzwoPyUFxQ=="
+    },
+    {
+      "package": "diff",
+      "version": "9.0.0",
+      "license": "BSD-3-Clause",
+      "gitHead": "db0b12ace208da7fd741cf96d97f009347a9eaa8",
+      "tarball": "https://registry.npmjs.org/diff/-/diff-9.0.0.tgz",
+      "integrity": "sha512-svtcdpS8CgJyqAjEQIXdb3OjhFVVYjzGAPO8WGCmRbrml64SPw/jJD4GoE98aR7r25A0XcgrK3F02yw9R/vhQw=="
+    },
+    {
+      "repository": "microsoft/vscode",
+      "commit": "48b0e17de39ccaa1e65f35a5d20f02c6ba166106",
+      "license": "MIT",
+      "reuse": "Design comparison only; no code or assets copied."
+    }
+  ]
+}
