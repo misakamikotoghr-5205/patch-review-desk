@@ -31,6 +31,28 @@ notice without replacing an existing fixture or token file.
 The fixture helper is deterministic. No inference is performed by the UI/server.
 The page is a local tool, not a public hosted demo or production multiuser editor.
 
+On 2026-11-06, an isolated manual UI check used a fresh workspace, SQLite ledger
+and role capabilities on port 4186, seeded only with `fixtures/welcome.md`. The
+agent page created two hunks with approval controls disabled; the human page
+approved and applied only the first. The baseline changed to `09:30` while the
+original final sentence stayed unchanged. Confirmed rollback restored `09:00`
+and the exact original SHA-256, with both receipts retained. Both native browser
+confirmation dialogs were visibly accepted, not bypassed. See the
+[sanitized UI evidence](docs/evidence/ui-fixture-20261106.json). This run was
+fixture/model-off and was not screen-recorded.
+
+A later isolated reviewer workflow was recorded on port 4187 and is available
+as a [public Clips demo](https://clips.agent-native.com/share/r01FTO1ytVvm)
+(about 2:05, no audio or camera). It shows review, one-hunk apply and rollback
+of a fixed proposal created by an agent capability before recording; it does
+not show LLM generation or the off-screen proposal creation. Official metadata
+reports `ready`, and the share page and recommended frames were accessible
+without cookies. A logged-in browser played naturally to the end without a
+decode error; full anonymous-browser playback is not claimed. See the
+[recording evidence](docs/evidence/clip-recording-20261106.json). Formal event
+submission still awaits final rules/eligibility confirmation. The separate
+local-model probes below retain their original limitations.
+
 ## Real Agent-Native use
 
 `@agent-native/core@0.223.0` is an installed, locked dependency, not a lookalike.

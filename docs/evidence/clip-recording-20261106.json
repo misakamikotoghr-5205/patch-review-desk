@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-11-06",
+  "provenance": "Actual Clips recording and public HTTP/media checks performed and reported by the supervising agent; sanitized summary without signed media URLs, screenshots or personal details.",
+  "clip_id": "r01FTO1ytVvm",
+  "public_url": "https://clips.agent-native.com/share/r01FTO1ytVvm",
+  "official_metadata_endpoint": "https://clips.agent-native.com/api/agent-context.json?id=r01FTO1ytVvm",
+  "public_http_checks": {
+    "cookies_sent": false,
+    "metadata_http_status": 200,
+    "clip_status": "ready",
+    "agent_readiness": "ready",
+    "duration_ms": 124936,
+    "width": 1280,
+    "height": 720,
+    "has_audio": false,
+    "has_camera": false,
+    "share_page_http_status": 200,
+    "recommended_frames_checked": 4,
+    "recommended_frame_http_statuses": [200, 200, 200, 200],
+    "visually_reviewed_frame_offsets_ms_approximate": [0, 93000],
+    "sample_frame_observation": "The two reviewed frames showed only fictional project UI, with no credentials visible. This is a sampled-frame observation, not a claim that every frame was independently inspected."
+  },
+  "authenticated_browser_playback": {
+    "logged_in": true,
+    "initial_observation": {
+      "current_time_seconds": 52.18,
+      "duration_seconds": 124.794,
+      "ready_state": 4,
+      "paused": false,
+      "error": null
+    },
+    "final_observation": {
+      "current_time_seconds": 124.794,
+      "duration_seconds": 124.794,
+      "ended": true,
+      "paused": true,
+      "ready_state": 4,
+      "error": null,
+      "seek_used": false
+    },
+    "conclusion": "The logged-in browser played naturally to the end without a decode error. This is separate from cookie-free public HTTP and frame access."
+  },
+  "recording_scope": {
+    "fixture_source": "fixtures/welcome.md",
+    "fresh_isolated_workspace_and_ledger": true,
+    "model_off_title_visible": true,
+    "model_called": false,
+    "agent_proposal_created_before_capture": true,
+    "agent_proposal_creation_shown": false,
+    "visible_workflow": [
+      "Reviewer UI loads the existing two-hunk fixed proposal.",
+      "Human approves only the time-change hunk.",
+      "Confirmed partial apply changes the time while leaving Come back next month. unchanged.",
+      "Confirmed rollback restores the original fixture."
+    ]
+  },
+  "limits": [
+    "Full playback in an anonymous browser was not verified; do not combine authenticated playback and cookie-free HTTP checks into that claim.",
+    "This fixed-fixture recording does not demonstrate LLM generation, model goal completion or off-screen proposal creation.",
+    "The independent real local-model probe retains its timeout and goal-following limitations in local-model-20261106.json.",
+    "The clip is not official acceptance, a judged eligibility decision or a competition submission receipt."
+  ],
+  "formal_submission": {
+    "submitted": false,
+    "remaining": "Final action-time rules and eligibility confirmation, then formal Builder submission."
+  }
+}

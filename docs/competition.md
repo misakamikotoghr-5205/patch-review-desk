@@ -34,13 +34,38 @@ See [both requests and outcomes](evidence/local-model-20261106.json) and the
 model-quality claim, successful goal-completion claim or framework action/UI
 approval demonstration.
 
-Still needed: entrant qualification/terms review, a recorded working
-people-and-agent demonstration, a public Clips recording, accessible test
-instructions and formal submission. No account was opened, event terms accepted,
-recording uploaded, registration email sent or form submitted here.
+Separately, an isolated manual UI verification on 2026-11-06 exercised the
+working fixture end to end: agent-capability proposal with two hunks and
+disabled approval controls, human approval of only one hunk, confirmed partial
+apply, and confirmed rollback. The time changed from 09:00 to 09:30 while the
+unapproved final-sentence edit stayed out; rollback restored the original
+content hash and both receipts remained. Native confirmation dialogs were
+accepted through the visible host UI. This was model-off, used only the shipped
+fictional fixture and fresh local storage, and was not recorded. See
+[sanitized manual UI evidence](evidence/ui-fixture-20261106.json); it is separate
+from the model-adapter probes and does not establish general model quality.
+
+Still needed: final action-time rules and entrant eligibility confirmation,
+accessible test instructions and formal submission. The earlier unrecorded
+check is now followed by a separate
+[published Clips recording](https://clips.agent-native.com/share/r01FTO1ytVvm),
+completed on 2026-11-06. The recording shows the reviewer UI loading a two-hunk
+fixed proposal prepared with an independent agent capability before capture,
+approval of only the time change, partial apply with the final sentence left
+unchanged, and rollback. Its title marks the fixture/model-off scope; no LLM
+generation or off-screen proposal creation is presented as recorded.
+
+Official public metadata reports `ready`, 124,936 ms, 1280×720, no audio and no
+camera. A cookie-free share-page request and all four recommended frame
+requests returned 200. Separately, the logged-in browser played naturally to
+the end (`ended=true`, no decode error). This does not establish full playback
+in an anonymous browser. [Sanitized recording evidence](evidence/clip-recording-20261106.json)
+keeps those checks distinct. A published clip is not platform acceptance or a
+submission receipt: final action-time rules/eligibility confirmation and the
+Builder submission remain pending; no competition form has been submitted.
 
 The official rules require the functional Agent-Native app and public Clips
 demo, not a specific LLM provider. The deterministic fixture is still model-off;
 if a model segment is included, review the actual result and retain both the
 timeout and goal-following limitation rather than presenting the contract pass
-as successful editing. No public Clips recording has been produced.
+as successful editing. The published clip demonstrates the fixed fixture only.

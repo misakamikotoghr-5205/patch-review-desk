@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-11-06",
+  "verification_type": "manual-ui-fixture",
+  "provenance": "Initial unrecorded manual CUA UI sequence performed and reported by the supervising agent. A later separate recorded fixture run is linked in recording_follow_up.",
+  "environment": {
+    "host": "127.0.0.1",
+    "port": 4186,
+    "workspace": "fresh isolated temporary workspace; private path omitted",
+    "database": "fresh separate SQLite ledger",
+    "capabilities": "fresh separate agent and human roles; values omitted",
+    "fixture_source": "fixtures/welcome.md",
+    "existing_repository_data_used": false,
+    "real_user_files_used": false,
+    "model_mode": "off",
+    "model_called": false
+  },
+  "observations": [
+    {
+      "step": "agent-proposal",
+      "role": "agent",
+      "action": "Draft two fixture edits, then send for review",
+      "hunk_count": 2,
+      "agent_approval_controls_disabled": true
+    },
+    {
+      "step": "human-review",
+      "role": "human",
+      "action": "Approve only the first hunk",
+      "approved_hunks": 1,
+      "total_hunks": 2
+    },
+    {
+      "step": "partial-apply",
+      "role": "human",
+      "action": "Apply approved hunks and accept the visible native confirmation",
+      "succeeded": true,
+      "applied_time": "09:30",
+      "unapproved_final_sentence_unchanged": "Come back next month."
+    },
+    {
+      "step": "rollback",
+      "role": "human",
+      "action": "Rollback and accept the visible native confirmation",
+      "succeeded": true,
+      "restored_time": "09:00",
+      "original_content_hash_restored": true,
+      "retained_receipts": 2
+    }
+  ],
+  "content_hashes": {
+    "algorithm": "SHA-256",
+    "original": "d30d35be51782d383099e7a61e5b16c422ba87d9304649159c533f79b92dd7ea",
+    "after_partial_apply": "b7c2405d9c4c6ec2cb2693d79707e477601bfd31df9c8af8c9d8fd34b5fa8a19",
+    "after_rollback": "d30d35be51782d383099e7a61e5b16c422ba87d9304649159c533f79b92dd7ea"
+  },
+  "confirmation_handling": {
+    "tab_api_blocked_on_native_dialog": true,
+    "resolution": "Accepted the visible OK button using native host-window CUA controls for each confirmation.",
+    "confirmation_bypassed": false
+  },
+  "boundaries": [
+    "The two edits came from the fixed fixture helper, not an LLM.",
+    "The independent local-model probes remain documented in local-model-20261106.json, including timeout and goal-following limitations.",
+    "This run observed disabled agent UI controls; it does not claim a separately executed manual HTTP authorization-denial probe.",
+    "The initial port-4186 check was unrecorded. A later separate port-4187 fixture recording is now public; it does not show LLM generation or the agent's off-screen proposal creation.",
+    "Private paths, role values, personal information and receipt identifiers are intentionally omitted."
+  ],
+  "recording_follow_up": {
+    "recorded_on": "2026-11-06",
+    "isolated_port": 4187,
+    "public_clips_url": "https://clips.agent-native.com/share/r01FTO1ytVvm",
+    "scope": "Reviewer UI loads a two-hunk fixed proposal created before capture by an independent agent capability; approves only the time hunk, applies it while leaving the final sentence unchanged, then rolls back. Fixture/model-off title; no LLM is shown.",
+    "evidence_file": "clip-recording-20261106.json"
+  },
+  "submission_status": {
+    "screen_recorded": true,
+    "public_clips_url": "https://clips.agent-native.com/share/r01FTO1ytVvm",
+    "formally_submitted": false,
+    "remaining": "Final action-time rules and eligibility confirmation, then formal Builder submission."
+  }
+}
