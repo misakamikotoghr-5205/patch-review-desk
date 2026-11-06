@@ -141,7 +141,7 @@ notices, excluding data/tokens/dependencies. It is a Node server distribution,
 not a static site. No GitHub Actions workflow or remote CI claim is included.
 
 [Competition assessment](docs/competition.md) records the Builder.io deadline and
-remaining actual demo/submission work. [Landscape](docs/landscape.md) compares
+the official receipt of the entry on November 6, 2026. [Landscape](docs/landscape.md) compares
 Agent-Native, jsdiff and VS Code; patch review itself is established practice.
 Application code and fictional fixture: MIT. Dependencies retain their own
 licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).

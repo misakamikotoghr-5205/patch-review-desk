@@ -1,0 +1,19 @@
+{
+  "event": "Builder Agent-Native Hackathon",
+  "project": "Patch Review Desk",
+  "confirmed_at": "2026-11-06T07:52:16.325846+00:00",
+  "official_form_url": "https://www.builder.io/hackathon/submit",
+  "official_visible_heading": "Thank you for submitting.",
+  "official_visible_message": "Your project submission has been received.",
+  "submission_number_displayed": false,
+  "user_confirmed_final_entry": true,
+  "required_rules_and_processing_checkbox": true,
+  "optional_marketing_checkbox": false,
+  "submitted_repository": "https://github.com/misakamikotoghr-5205/patch-review-desk",
+  "submitted_public_video": "https://clips.agent-native.com/share/r01FTO1ytVvm",
+  "proof": "Official visible success state observed after the Submit action. Screenshot and identity details retained privately.",
+  "limits": [
+    "Confirms receipt of an entry; not judging acceptance, qualification or an award.",
+    "No email receipt or entry number was observed."
+  ]
+}

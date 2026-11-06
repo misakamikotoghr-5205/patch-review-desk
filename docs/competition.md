@@ -66,7 +66,9 @@ through the [official form](https://www.builder.io/hackathon/submit). The offici
 page displayed **“Thank you for submitting.”** and **“Your project submission
 has been received.”** The optional marketing checkbox stayed unchecked. The
 receipt screenshot is retained privately; no submission number was displayed.
-This confirms receipt of the project entry, not judging acceptance or an award.
+[Sanitized submission evidence](evidence/submission-20261106.json) records the
+observed result. This confirms receipt of the project entry, not judging
+acceptance or an award.
 
 The official rules require the functional Agent-Native app and public Clips
 demo, not a specific LLM provider. The deterministic fixture is still model-off;

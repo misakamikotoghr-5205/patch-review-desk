@@ -17,8 +17,16 @@
     "has_camera": false,
     "share_page_http_status": 200,
     "recommended_frames_checked": 4,
-    "recommended_frame_http_statuses": [200, 200, 200, 200],
-    "visually_reviewed_frame_offsets_ms_approximate": [0, 93000],
+    "recommended_frame_http_statuses": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "visually_reviewed_frame_offsets_ms_approximate": [
+      0,
+      93000
+    ],
     "sample_frame_observation": "The two reviewed frames showed only fictional project UI, with no credentials visible. This is a sampled-frame observation, not a claim that every frame was independently inspected."
   },
   "authenticated_browser_playback": {
@@ -63,6 +71,7 @@
   ],
   "formal_submission": {
     "submitted": false,
-    "remaining": "Final action-time rules and eligibility confirmation, then formal Builder submission."
+    "remaining": "Final action-time rules and eligibility confirmation, then formal Builder submission.",
+    "snapshot_scope": "Historical state at UI/video verification, before the final form submission later on 2026-11-06. See submission-20261106.json for the subsequent official receipt."
   }
 }
