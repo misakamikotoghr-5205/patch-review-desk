@@ -25,9 +25,22 @@ This project was created during the window and actually imports the official
 framework action layer. It supplies a local working fixture and optional local
 model proposal adapter. Runtime tests verify the installed framework's schemas
 and authorization. This is not proof that a judge has accepted this narrow
-integration or that real agent inference took place.
+integration. On 2026-11-06, production `modelDraft()` genuinely called local
+Ollama: an original request timed out at 45 seconds, then a same-base-model
+bounded alias returned in 19.261 seconds and passed the text-only contract. It
+preserved the schedule but failed the requested two-line format and heading.
+See [both requests and outcomes](evidence/local-model-20261106.json) and the
+[alias settings](evidence/Modelfile). This is limited output evidence, not a
+model-quality claim, successful goal-completion claim or framework action/UI
+approval demonstration.
 
-Still needed: entrant qualification/terms review, an actual model-assisted
+Still needed: entrant qualification/terms review, a recorded working
 people-and-agent demonstration, a public Clips recording, accessible test
 instructions and formal submission. No account was opened, event terms accepted,
 recording uploaded, registration email sent or form submitted here.
+
+The official rules require the functional Agent-Native app and public Clips
+demo, not a specific LLM provider. The deterministic fixture is still model-off;
+if a model segment is included, review the actual result and retain both the
+timeout and goal-following limitation rather than presenting the contract pass
+as successful editing. No public Clips recording has been produced.

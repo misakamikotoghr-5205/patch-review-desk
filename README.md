@@ -62,8 +62,20 @@ text-only JSON answer, then submits a proposal using the **agent** token through
 the same Agent-Native action definitions. It cannot approve or apply changes.
 Model output cannot select a different path, invoke a tool, or add approval
 fields. It fails when unconfigured or invalid; there is no fake-success fallback.
-Only `welcome.md` and your editing goal are sent to this local model. No actual
-model inference was run during development; tests inject a contract transport.
+Only `welcome.md` and your editing goal are sent to this local model. On
+2026-11-06, production `modelDraft()` was genuinely exercised twice against local
+Ollama using the complete fictional fixture and the same short-announcement goal.
+The original `qwen2.5:0.5b` request timed out at 45 seconds. A same-base-model
+alias with explicit bounded settings returned in 19.261 seconds and passed the
+text-only contract. It preserved `09:00`, but omitted the requested heading and
+kept the original body instead of producing the requested two-line announcement.
+**Passing the text contract did not establish that the editing goal was met.**
+[The evidence](docs/evidence/local-model-20261106.json) retains both requests,
+the raw accepted response and the original timeout; the reproducible
+[Modelfile](docs/evidence/Modelfile) caps output at 256 tokens. These observations
+do not establish a speed fix or general model quality. No role token, private
+workspace, proposal, approval, file application or UI sequence was used in this
+probe. Unit tests continue to inject a contract transport.
 An external agent may instead use `/api/tools` and `/api/actions/propose` with
 the separate agent token. Do not give it the human token or unrestricted OS tools.
 
