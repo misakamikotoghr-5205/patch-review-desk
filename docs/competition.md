@@ -45,9 +45,7 @@ fictional fixture and fresh local storage, and was not recorded. See
 [sanitized manual UI evidence](evidence/ui-fixture-20261106.json); it is separate
 from the model-adapter probes and does not establish general model quality.
 
-Still needed: final action-time rules and entrant eligibility confirmation,
-accessible test instructions and formal submission. The earlier unrecorded
-check is now followed by a separate
+The earlier unrecorded check is now followed by a separate
 [published Clips recording](https://clips.agent-native.com/share/r01FTO1ytVvm),
 completed on 2026-11-06. The recording shows the reviewer UI loading a two-hunk
 fixed proposal prepared with an independent agent capability before capture,
@@ -60,9 +58,15 @@ camera. A cookie-free share-page request and all four recommended frame
 requests returned 200. Separately, the logged-in browser played naturally to
 the end (`ended=true`, no decode error). This does not establish full playback
 in an anonymous browser. [Sanitized recording evidence](evidence/clip-recording-20261106.json)
-keeps those checks distinct. A published clip is not platform acceptance or a
-submission receipt: final action-time rules/eligibility confirmation and the
-Builder submission remain pending; no competition form has been submitted.
+keeps those checks distinct.
+
+On 2026-11-06, after the entrant confirmed the completed entry, eligibility,
+rights, official rules and personal-data processing, the entry was submitted
+through the [official form](https://www.builder.io/hackathon/submit). The official
+page displayed **“Thank you for submitting.”** and **“Your project submission
+has been received.”** The optional marketing checkbox stayed unchecked. The
+receipt screenshot is retained privately; no submission number was displayed.
+This confirms receipt of the project entry, not judging acceptance or an award.
 
 The official rules require the functional Agent-Native app and public Clips
 demo, not a specific LLM provider. The deterministic fixture is still model-off;
